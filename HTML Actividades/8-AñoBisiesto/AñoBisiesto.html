@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Año Bisiesto</title>
+</head>
+<body>
+
+    <h2>Comprobador de Año Bisiesto</h2>
+
+    <label for="year">Ingrese un año:</label>
+    <input type="number" id="year" placeholder="Año">
+
+    <button onclick="comprobarBisiesto()">Comprobar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function comprobarBisiesto() {
+            var year = parseInt(document.getElementById('year').value);
+
+            if (!isNaN(year)) {
+                var esBisiesto = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+
+                document.getElementById('resultado').innerText = esBisiesto ? year + " es un año bisiesto." : year + " no es un año bisiesto.";
+            } else {
+                alert('Por favor, ingrese un año válido.');
+            }
+        }
+    </script>
+
+</body>
+</html>

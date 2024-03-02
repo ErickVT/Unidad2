@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Personalizado</title>
+</head>
+<body>
+
+    <h1>Bienvenido a la grasa :v</h1>
+
+    <script>
+        // Pide al usuario su nombre
+        var nombre = prompt("Por favor, ingresa tu nombre:");
+
+        // Verifica si el usuario ingresó un nombre
+        if (nombre) {
+            // Muestra el saludo personalizado
+            document.write("<p>Hola, " + nombre + "! Bienvenido.</p>");
+        } else {
+            // Si no se ingresó un nombre, muestra un saludo genérico
+            document.write("<p>Hola, visitante! Bienvenido.</p>");
+        }
+    </script>
+
+</body>
+</html>

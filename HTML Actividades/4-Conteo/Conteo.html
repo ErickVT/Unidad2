@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteo de Clics</title>
+</head>
+<body>
+
+    <h2>Conteo de Clics</h2>
+
+    <button id="miBoton" onclick="contarClics()">Haz clic</button>
+
+    <p id="conteo">0</p>
+
+    <script>
+        // Inicializar el conteo
+        var contador = 0;
+
+        function contarClics() {
+            // Incrementar el conteo al hacer clic
+            contador++;
+
+            // Mostrar el nuevo conteo
+            document.getElementById('conteo').innerHTML = "Clics: " + contador;
+        }
+    </script>
+
+</body>
+</html>
